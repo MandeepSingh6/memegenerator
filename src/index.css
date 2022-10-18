@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.leftHead {
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.leftHead img {
+  margin-right: 0.8rem;
+  width: 60px;
+  height: 60px;
+}
+.header-container {
+  color: white;
+  padding: 0.4rem 4rem;
+  background-color: rgb(145, 81, 206);
+  display: flex;
+  align-items: center;
+}
+
+.input-container {
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.input-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+.input-container input {
+  width: 48%;
+  padding: 1.2rem;
+  border-radius: 0.4rem;
+  border: 1px solid rgb(128, 118, 118);
+}
+.input-container button {
+  font-size: 1.4rem;
+  border-radius: 0.4rem;
+  background-color: rgb(145, 81, 206);
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  color: white;
+}
+.image-container {
+  width: 60vw;
+  max-height: 470px;
+  display: flex;
+  margin: auto;
+  padding-bottom: 0.2rem;
+  position: relative;
+}
+.image-container img {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+
+  object-fit: fill;
+  object-position: center;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.9;
+}
+.image-container .leftInputText,
+.image-container .rightInputText {
+  color: white;
+  font-family: impact, sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4rem;
+  font-weight: bolder;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+.image-container .rightInputText {
+  bottom: 0;
+}
+@media only screen and (max-width: 775px) {
+  .header-container {
+    padding: 0.4rem 0.4rem;
+  }
+}
